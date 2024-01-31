@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>Java_Study_Part_5</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>Java_Study_Part_5</name>
     <description>Java_Study_Part_5</description>
     <properties>
@@ -39,7 +39,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -59,6 +58,10 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>2.2.220</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
         </dependency>
         <dependency>
             <groupId>jakarta.validation</groupId>
@@ -89,7 +92,7 @@
                 <version>3.3.1</version>
                 <configuration>
                     <to>
-                        <image>ivanmmf/books-shop</image>
+                        <image>ivanmmf/java-stud-part-5</image>
                         <!--<auth>-->
                         <!--  <username>${env.REGISTRY_USERNAME}</username>-->
                         <!--  <password>${env.REGISTRY_PASSWORD}</password>-->
